@@ -382,12 +382,9 @@ pre code {
 <pre class="r"><code>ipt &lt;- installed.packages() %&gt;%
   as_tibble() %&gt;%
   select(Package, LibPath, Version, Priority, Built) %&gt;%
-  write_csv(path = &quot;installed-packages.csv&quot;)</code></pre>
-<pre><code>## Warning: The `path` argument of `write_csv()` is deprecated as of readr 1.4.0.
-## Please use the `file` argument instead.
-## This warning is displayed once every 8 hours.
-## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.</code></pre>
-<pre class="r"><code>ipt</code></pre>
+  write_csv(&quot;installed-packages.csv&quot;)
+
+ipt</code></pre>
 <pre><code>## # A tibble: 377 × 5
 ##    Package         LibPath                                 Version Prior…¹ Built
 ##    &lt;chr&gt;           &lt;chr&gt;                                   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;
