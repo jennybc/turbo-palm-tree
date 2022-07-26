@@ -1,9 +1,10 @@
 01_write-installed-packages.R
 ================
 Jenny Bryan
-2022-07-25
+2022-07-26
 
 ``` r
+# an insightful comment
 library(tidyverse)
 ```
 
